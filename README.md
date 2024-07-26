@@ -2,19 +2,25 @@
 
 # DRF Personal Blog
 
+https://www.youtube.com/watch?v=c708Nf0cHrs
+
 A blogging platform built with Django REST Framework (DRF) for personal use and hobbyist blogging. This project allows users to create, read, update, and delete blog posts.
 
 ## Table of Contents
 
-- [Use Case](#use-case)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [DRF Personal Blog](#drf-personal-blog)
+  - [Table of Contents](#table-of-contents)
+  - [Use Case](#use-case)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Install Dependencies](#install-dependencies)
+  - [Usage](#usage)
+  - [API Endpoints](#api-endpoints)
+  - [Technologies Used](#technologies-used)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgements](#acknowledgements)
 
 ## Use Case
 
