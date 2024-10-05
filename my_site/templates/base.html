@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'post_list' %}">My Blog</a></h1>
+        <nav>
+            <a href="{% url 'post_list' %}">Posts</a>
+            <a href="{% url 'page_detail' slug='about' %}">About</a>
+            <a href="{% url 'register' %}">Register</a>
+        </nav>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

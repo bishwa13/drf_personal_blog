@@ -1,0 +1,8 @@
+<h1>{{ post.title }}</h1>
+<p>by {{ post.author.username }} | {{ post.created_at }}</p>
+<div>
+    {{ post.content|safe }}
+</div>
+<a href="{% url 'post_list' %}">Back to blog</a>
+
+
