@@ -4,11 +4,20 @@
 {% block content %}
 
         <h1>Blog Posts</h1>
+        <h2>Posts</h2>
+        <a href="{% url 'post_create' %}">Create New Post</a>
+
         <ul>
             {% for post in posts %}
                 <li>
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a> by {{ post.author.username }}
-                </li>
+                    <li>
+                        <h3><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h3>
+
+                        
+                        <p>By {{ post.author }} </p>
+                    </li>
+            {% empty %}
+                <li>No posts yet.</li>
             {% endfor %}
         </ul>
 
