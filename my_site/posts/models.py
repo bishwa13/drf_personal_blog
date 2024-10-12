@@ -1,15 +1,15 @@
-
+# posts/models.py
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.urls import reverse
-from django_ckeditor_5.fields import CKEditor5Field
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True, blank=True)
-    content = CKEditor5Field('Text', config_name='extends')
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    content =  models.TextField()
+    author = models.ForeignKey('auth.user', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

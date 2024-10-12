@@ -23,15 +23,12 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('pages/', include('pages.urls')),
     path('posts/', include('posts.urls')),
     path('users/', include('users.urls')),
     path('', include('posts.urls')),  # Set blog homepage to post list
 ]
-
-urlpatterns += [
-    path("ckeditor5/", include('django_ckeditor_5.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 if settings.DEBUG:
